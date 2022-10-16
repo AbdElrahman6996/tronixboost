@@ -2,7 +2,7 @@ import React from 'react'
 import Profileimg from './img/teamimg.png'
 import Logo from './img/Logo.svg'
 import Teams from './img/Rectangleteam.svg'
-import './Team.css'
+import './Teaming.css'
 
 const Team = () => {
     return (
@@ -11,13 +11,23 @@ const Team = () => {
                 <h2>طاقم العمل</h2>
                 <img src={Teams} alt="" />
             </div>
-            <div className='teamcontainer'>
-                <div className='conte'>
-                    <div>
+            <div className='team-component' style={{
+                display: 'flex',
+                flexDirection: 'row'
+            }}>
+                <div className='component-container'>
+                    <div className='team-conteimg'>
                         <img src={Profileimg} alt="" />
                     </div>
-                    <div className="texting">
-                        <div className='leftorright'>
+                    <div className="team-texting" style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          height: '200px'
+                    }}>
+                        <div className='team-leftorright' style={{
+                          display: 'flex',
+                          flexDirection: 'row'
+                    }}>
                             <div>
                                 <p>Tronix</p>
                                 <span>CEO & Founder</span>
@@ -32,6 +42,8 @@ const Team = () => {
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </section>
     )
