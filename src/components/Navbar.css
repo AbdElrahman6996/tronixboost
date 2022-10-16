@@ -26,13 +26,18 @@
     color: #FFFFFF;
 }
 
-.nav-icons{
+.navlinks a:hover {
+    color: #8E8D8C;
+}
+
+.nav-icons {
     width: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.nav-icons a{
+
+.nav-icons a {
     display: inline-block;
     width: 40px;
     height: 40px;
@@ -43,26 +48,37 @@
     justify-content: center;
     border-radius: 50%;
 }
-.nav-icons a img{
+
+.nav-icons a img {
     width: 22px;
 }
-
+.hambruger-menu {
+    display: none;
+}
+#hide {
+    display: none;
+}
 @media screen and (max-width:910px) {
-    .nav-icons{
+    .hambruger-menu {
+        display: unset;
+    }
+    .nav-icons {
         display: none;
     }
-    .navlinks{
+    
+    .navlinks {
         display: none;
     }
-    .navbar{
-        border: 2px solid red;
+
+    .navbar {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-between;
         padding: 0 50px;
     }
-    .mobile-navlinks{
+    
+    .mobile-navlinks {
         position: absolute;
         top: 50%;
         margin-top: 90px;
@@ -76,10 +92,20 @@
         flex-direction: column;
         background: #382B6A;
         height: 100vh;
-        transform: translate(-50%,-50%);
+        transform: translate(-50%, -50%);
         width: 100vw;
     }
-    .mobile-navlinks a{
-        
+    
+    .mobile-navlinks a {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        color: #FFFFFF;
+    }
+ 
+}
+@media screen and (max-width: 361px) {
+    .navbar {
+        padding: 0 25px;
     }
 }
