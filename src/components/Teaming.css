@@ -1,5 +1,4 @@
 .team-container {
-    border: 2px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -18,32 +17,74 @@
     font-size: 65px;
     line-height: 97px;
     color: #FFFFFF;
+    margin-top: 100px;
 }
 
-.team-component{
-    border: 2px solid green;
+.team-component {
     width: 90%;
-
-}
-.team-component .component-container{
-    width: 400px;
-    border: 2px solid black;
-    background: #30384D;
-    height: 800px;
     display: flex;
+    align-items: center;
+}
+
+.team-component .component-container {
+    width: 400px;
+    border-radius: 10px;
+    background: #30384D;
+    height: 600px;
+    display: flex;
+    margin-top: 50px;
     flex-direction: column;
 }
-.team-component .component-container .team-conteimg{
+
+.team-component .component-container .team-conteimg {
     width: 85%;
     margin-top: 15px;
 }
-.team-component .component-container .team-conteimg img{
+
+.team-component .component-container .team-conteimg img {
     width: 100%;
 }
-.team-texting{
-    border: 2px solid red;
-    height: 300px;
-    width: 85%;
+
+.team-texting {
+    width: 100%;
+    margin-top: -100px;
     display: flex;
+    padding-top: 16px;
     flex-direction: column;
+}
+
+.team-texting div {
+    width: 100%;
+}
+
+.team-texting div .name {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.discord-server {
+    color: #545C71;
+}
+
+.joinnow {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+.discordserver{
+    margin-top: -160px;
+}
+.team-texting div span {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 13px;
+    color: #FFFFFF;
+}
+
+.team-texting div img {
+    width: 60px;
+    border-radius: 50%;
 }

@@ -13,37 +13,91 @@ const Team = () => {
             </div>
             <div className='team-component' style={{
                 display: 'flex',
-                flexDirection: 'row'
+                flexDirection: 'row',
+                alignItems: 'center',
+                justifyContent: 'space-between',
             }}>
                 <div className='component-container'>
                     <div className='team-conteimg'>
                         <img src={Profileimg} alt="" />
                     </div>
                     <div className="team-texting" style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          height: '200px'
+                        display: 'flex',
+                        flexDirection: 'column',
+                        height: '200px'
                     }}>
                         <div className='team-leftorright' style={{
-                          display: 'flex',
-                          flexDirection: 'row'
-                    }}>
+                            display: 'flex',
+                            flexDirection: 'row'
+                        }}>
                             <div>
-                                <p>Tronix</p>
+                                <p className='name'>Tronix</p>
                                 <span>CEO & Founder</span>
                             </div>
                             <div>
                                 <img src={Logo} alt="" />
                             </div>
                         </div>
-                        <div>
-                            <p>Discord Server</p>
-                            <a href="/">Join Now</a>
+                        <div className='discordserver'>
+                            <p className='discord-server'>Discord Server</p>
+                            <a href="/" className='joinnow'>Join Now</a>
                         </div>
                     </div>
                 </div>
-
-
+                <div className='component-container'>
+                    <div className='team-conteimg'>
+                        <img src={Profileimg} alt="" />
+                    </div>
+                    <div className="team-texting" style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        height: '200px'
+                    }}>
+                        <div className='team-leftorright' style={{
+                            display: 'flex',
+                            flexDirection: 'row'
+                        }}>
+                            <div>
+                                <p className='name'>Tronix</p>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <div>
+                                <img src={Logo} alt="" />
+                            </div>
+                        </div>
+                        <div className='discordserver'>
+                            <p className='discord-server'>Discord Server</p>
+                            <a href="/" className='joinnow'>Join Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div className='component-container'>
+                    <div className='team-conteimg'>
+                        <img src={Profileimg} alt="" />
+                    </div>
+                    <div className="team-texting" style={{
+                        display: 'flex',
+                        flexDirection: 'column',
+                        height: '200px'
+                    }}>
+                        <div className='team-leftorright' style={{
+                            display: 'flex',
+                            flexDirection: 'row'
+                        }}>
+                            <div>
+                                <p className='name'>Tronix</p>
+                                <span>CEO & Founder</span>
+                            </div>
+                            <div>
+                                <img src={Logo} alt="" />
+                            </div>
+                        </div>
+                        <div className='discordserver'>
+                            <p className='discord-server'>Discord Server</p>
+                            <a href="/" className='joinnow'>Join Now</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     )
