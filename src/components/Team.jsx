@@ -1,13 +1,15 @@
 import React from 'react'
 import Profileimg from './img/teamimg.png'
 import Logo from './img/Logo.svg'
+import Teams from './img/Rectangleteam.svg'
 import './Team.css'
+
 const Team = () => {
     return (
         <section className='team-container'>
             <div>
                 <h2>طاقم العمل</h2>
-                <img src="" alt="" />
+                <img src={Teams} alt="" />
             </div>
             <div className='teamcontainer'>
                 <div className='conte'>
