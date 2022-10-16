@@ -46,3 +46,40 @@
 .nav-icons a img{
     width: 22px;
 }
+
+@media screen and (max-width:910px) {
+    .nav-icons{
+        display: none;
+    }
+    .navlinks{
+        display: none;
+    }
+    .navbar{
+        border: 2px solid red;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+    .mobile-navlinks{
+        position: absolute;
+        top: 50%;
+        margin-top: 90px;
+        left: 50%;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        padding-top: 150px;
+        z-index: 999;
+        gap: 60px;
+        flex-direction: column;
+        background: #382B6A;
+        height: 100vh;
+        transform: translate(-50%,-50%);
+        width: 100vw;
+    }
+    .mobile-navlinks a{
+        
+    }
+}
